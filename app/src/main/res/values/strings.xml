@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">W.A.S.P.P</string>
+    <string name="author">Nicolas Rosero Correal</string>
+    <string name="startLabel">Comienza</string>
+    <string name="registerLabel">Registrate</string>
+    <string name="loginLabel">Ingresar</string>
+    <string name="resetPasswordLabel">Recupera tu contraseña</string>
+    <string name="welcomeText">Inicia una nueva aventura con W.A.S.P.P y descubre una nueva forma de ver el mundo.</string>
+    <string name="loginText">La aventura esta por iniciar, por favor inicia sesión</string>
+</resources>
