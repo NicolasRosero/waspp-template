@@ -47,7 +47,7 @@
     app:layout_constraintTop_toTopOf="parent" />
 
   <ImageView
-    android:id="@+id/imageView2"
+    android:id="@+id/imageViewCredentials"
     android:layout_width="102dp"
     android:layout_height="156dp"
     android:layout_marginStart="16dp"
@@ -116,7 +116,7 @@
     app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
 
   <Button
-    android:id="@+id/button3"
+    android:id="@+id/buttonLoginGoogle"
     android:layout_width="325dp"
     android:layout_height="53dp"
     android:layout_marginTop="48dp"
@@ -142,7 +142,7 @@
     android:textColor="@color/white"
     android:textSize="15sp"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/button3" />
+    app:layout_constraintTop_toBottomOf="@+id/buttonLoginGoogle" />
 
   <TextView
     android:id="@+id/textViewEnter"
@@ -156,5 +156,5 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.14"
     app:layout_constraintStart_toEndOf="@+id/textViewNoAccount"
-    app:layout_constraintTop_toBottomOf="@+id/button3" />
+    app:layout_constraintTop_toBottomOf="@+id/buttonLoginGoogle" />
 </androidx.constraintlayout.widget.ConstraintLayout>

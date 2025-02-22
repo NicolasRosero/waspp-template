@@ -52,7 +52,7 @@
     app:layout_constraintTop_toBottomOf="@+id/textViewNameAppW" />
 
   <TextView
-    android:id="@+id/textView3"
+    android:id="@+id/textViewRegister"
     android:layout_width="125dp"
     android:layout_height="20dp"
     android:fontFamily="@font/adlam_display"
