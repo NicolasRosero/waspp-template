@@ -7,4 +7,10 @@
     <string name="resetPasswordLabel">Recupera tu contraseña</string>
     <string name="welcomeText">Inicia una nueva aventura con W.A.S.P.P y descubre una nueva forma de ver el mundo.</string>
     <string name="loginText">La aventura esta por iniciar, por favor inicia sesión</string>
+    <string name="imgIconDesc">Icon imagen</string>
+    <string name="imgLoginDesc">Imagen de credenciales</string>
+    <string name="inputUserNameLabel">Usuario</string>
+    <string name="inputUserPasswordLabel">Contraseña</string>
+    <string name="loginWithGoogle">Ingresa con Google</string>
+    <string name="noAccount">¿No tienes cuenta?</string>
 </resources>

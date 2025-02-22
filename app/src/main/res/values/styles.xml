@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Estilos para los botones -->
+  <style name="editBtnStyle" parent="@android:style/Widget.Button">
+    <item name="android:background">@drawable/btn_rounded</item>
+  </style>
+
+  <!-- Estilos para los inputs -->
+  <style name="editTextRounded" parent="@android:style/Widget.EditText">
+    <item name="background">@drawable/edit_text_rounded</item>
+  </style>
+</resources>
