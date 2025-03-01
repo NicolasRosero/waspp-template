@@ -12,5 +12,24 @@
     <string name="inputUserNameLabel">Usuario</string>
     <string name="inputUserPasswordLabel">Contraseña</string>
     <string name="loginWithGoogle">Ingresa con Google</string>
+    <string name="registerMessage">Completa el formulario para registrate</string>
     <string name="noAccount">¿No tienes cuenta?</string>
+    <string name="returnLabel">Regresar</string>
+    <string name="editLabel" >Editar</string>
+
+    <!-- Cadenas para el formulario de registro -->
+    <string name="inputNameString">Nombres</string>
+    <string name="inputLastNameString">Apellidos</string>
+    <string name="inputEmailString">Correo electrónico</string>
+    <string name="inputPhoneString">Teléfono</string>
+    <string name="inputPasswordString">Contraseña</string>
+    <string name="inputConfirmPasswordString">Confirmar contraseña</string>
+    <string name="checkTermsAndConditionsString">Acepta términos y condiciones</string>
+    <string name="btnCreateNewUserString">Registrar</string>
+    <string name="hasAlreadyAccountString">¿Ya estás registrado?</string>
+    <string name="goToLoginFromRegistryString">Iniciar sesión</string>
+
+    <!-- Cadenas para el formulario de recuperacion de contrasena -->
+    <string name="resetPasswordMessage">Ingresa tu correo electronico para recuperar tu contraseña</string>
+    <string name="btnResetPassword">Recuperar contraseña</string>
 </resources>

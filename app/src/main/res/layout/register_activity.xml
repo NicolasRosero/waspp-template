@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/registerActivity"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/black"
+  tools:context=".RegisterActivity">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageView
+      android:id="@+id/imgViewRegisterIcon"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:contentDescription="@string/imgIconDesc"
+      android:src="@drawable/main_icon" />
+
+    <TextView
+      android:id="@+id/textViewNameAppR"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="7dp"
+      android:layout_marginBottom="7dp"
+      android:fontFamily="@font/adlam_display"
+      android:text="@string/app_name"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textSize="34sp" />
+
+    <TextView
+      android:id="@+id/textViewRegisterMsg"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/adlam_display"
+      android:text="@string/registerMessage"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textSize="16sp" />
+
+    <EditText
+      android:id="@+id/inputUserName"
+      style="@style/editTextRounded"
+      android:layout_width="match_parent"
+      android:layout_height="52dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="7dp"
+      android:ems="10"
+      android:fontFamily="@font/adlam_display"
+      android:inputType="text"
+      android:hint="@string/inputNameString" />
+
+    <EditText
+      android:id="@+id/inputUserLastName"
+      style="@style/editTextRounded"
+      android:layout_width="match_parent"
+      android:layout_height="52dp"
+      android:ems="10"
+      android:fontFamily="@font/adlam_display"
+      android:inputType="text"
+      android:hint="@string/inputLastNameString"
+      android:layout_marginTop="7dp"
+      android:layout_marginBottom="7dp" />
+
+    <EditText
+      android:id="@+id/inputUserEmail"
+      style="@style/editTextRounded"
+      android:layout_width="match_parent"
+      android:layout_height="52dp"
+      android:ems="10"
+      android:fontFamily="@font/adlam_display"
+      android:inputType="textEmailAddress"
+      android:hint="@string/inputEmailString"
+      android:layout_marginTop="7dp"
+      android:layout_marginBottom="7dp" />
+
+    <EditText
+      android:id="@+id/inputUserPhone"
+      style="@style/editTextRounded"
+      android:layout_width="match_parent"
+      android:layout_height="52dp"
+      android:ems="10"
+      android:fontFamily="@font/adlam_display"
+      android:inputType="phone"
+      android:hint="@string/inputPhoneString"
+      android:layout_marginTop="7dp"
+      android:layout_marginBottom="7dp" />
+
+    <EditText
+      android:id="@+id/inputUserPassword"
+      style="@style/editTextRounded"
+      android:layout_width="match_parent"
+      android:layout_height="52dp"
+      android:ems="10"
+      android:fontFamily="@font/adlam_display"
+      android:inputType="textPassword"
+      android:hint="@string/inputPasswordString"
+      android:layout_marginTop="7dp"
+      android:layout_marginBottom="7dp" />
+
+    <EditText
+      android:id="@+id/inputUserConfirmPassword"
+      style="@style/editTextRounded"
+      android:layout_width="match_parent"
+      android:layout_height="52dp"
+      android:ems="10"
+      android:fontFamily="@font/adlam_display"
+      android:inputType="textPassword"
+      android:hint="@string/inputConfirmPasswordString"
+      android:layout_marginTop="7dp"
+      android:layout_marginBottom="7dp" />
+
+    <CheckBox
+      android:id="@+id/checkUserTerms"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/adlam_display"
+      android:textColor="@color/white"
+      android:text="@string/checkTermsAndConditionsString" />
+
+    <Button
+      android:id="@+id/btnCreateNewUser"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:backgroundTint="@color/white"
+      android:fontFamily="@font/adlam_display"
+      android:text="@string/btnCreateNewUserString"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="10dp"/>
+
+    <TextView
+      android:id="@+id/textViewHasAccount"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/adlam_display"
+      android:text="@string/hasAlreadyAccountString"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textSize="14sp" />
+
+    <TextView
+      android:id="@+id/textViewGoToLogin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/adlam_display"
+      android:text="@string/goToLoginFromRegistryString"
+      android:textAlignment="center"
+      android:textColor="@color/mainColor"
+      android:textSize="14sp"
+      android:onClick="goToLogin"/>
+  </LinearLayout>
+</ScrollView>

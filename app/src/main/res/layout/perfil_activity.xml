@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/perfilActivity"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/black"
+  tools:context=".PerfilActivity">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageView
+      android:id="@+id/photoPerfilImg"
+      android:layout_width="178dp"
+      android:layout_height="209dp"
+      android:contentDescription="@string/imgIconDesc"
+      android:rotation="90"
+      android:src="@drawable/img_perfil" />
+
+    <EditText
+      android:id="@+id/inputUserNamePerfil"
+      style="@style/editTextRounded"
+      android:layout_width="match_parent"
+      android:layout_height="52dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="7dp"
+      android:ems="10"
+      android:enabled="false"
+      android:fontFamily="@font/adlam_display"
+      android:hint="@string/inputNameString"
+      android:inputType="text" />
+
+    <EditText
+      android:id="@+id/inputUserLastNamePerfil"
+      style="@style/editTextRounded"
+      android:layout_width="match_parent"
+      android:layout_height="52dp"
+      android:layout_marginTop="7dp"
+      android:layout_marginBottom="7dp"
+      android:ems="10"
+      android:enabled="false"
+      android:fontFamily="@font/adlam_display"
+      android:hint="@string/inputLastNameString"
+      android:inputType="text" />
+
+    <EditText
+      android:id="@+id/inputUserEmailPerfil"
+      style="@style/editTextRounded"
+      android:layout_width="match_parent"
+      android:layout_height="52dp"
+      android:layout_marginTop="7dp"
+      android:layout_marginBottom="7dp"
+      android:ems="10"
+      android:enabled="false"
+      android:fontFamily="@font/adlam_display"
+      android:hint="@string/inputEmailString"
+      android:inputType="textEmailAddress" />
+
+    <EditText
+      android:id="@+id/inputUserPhonePerfil"
+      style="@style/editTextRounded"
+      android:layout_width="match_parent"
+      android:layout_height="52dp"
+      android:layout_marginTop="7dp"
+      android:layout_marginBottom="7dp"
+      android:ems="10"
+      android:enabled="false"
+      android:fontFamily="@font/adlam_display"
+      android:hint="@string/inputPhoneString"
+      android:inputType="phone" />
+
+    <Button
+      android:id="@+id/btnEditInfoUser"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:backgroundTint="@color/white"
+      android:fontFamily="@font/adlam_display"
+      android:text="@string/editLabel"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="10dp"/>
+  </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

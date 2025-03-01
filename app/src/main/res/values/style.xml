@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Estilos para los botones -->
+  <style name="editBtnStyle" parent="@android:style/Widget.Button">
+    <item name="android:backgroundTint">@drawable/btn_rounded</item>
+    <item name="android:color">@color/black</item>
+  </style>
+
+  <!-- Estilos para los inputs -->
+  <style name="editTextRounded" parent="@android:style/Widget.EditText">
+    <item name="android:background">@drawable/edit_text_rounded</item>
+    <item name="android:color">@color/black</item>
+    <item name="android:paddingLeft">16dp</item>
+    <item name="android:paddingRight">16dp</item>
+  </style>
+</resources>

@@ -58,12 +58,14 @@
     app:srcCompat="@drawable/user_password" />
 
   <EditText
-    android:id="@+id/editTextUserName"
+    android:id="@+id/inputEmailLogin"
+    style="@style/editTextRounded"
     android:layout_width="237dp"
     android:layout_height="45dp"
     android:layout_marginTop="292dp"
     android:ems="10"
-    android:inputType="text"
+    android:inputType="textEmailAddress"
+    android:hint="@string/inputEmailString"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.787"
     app:layout_constraintStart_toStartOf="parent"
@@ -71,7 +73,7 @@
     tools:ignore="Autofill,LabelFor" />
 
   <EditText
-    android:id="@+id/editTextPassword"
+    android:id="@+id/inputPasswordLogin"
     style="@style/editTextRounded"
     android:layout_width="237dp"
     android:layout_height="47dp"
@@ -79,10 +81,11 @@
     android:ems="10"
     android:importantForAutofill="no"
     android:inputType="textPassword"
+    android:hint="@string/inputPasswordString"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.787"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/editTextUserName"
+    app:layout_constraintTop_toBottomOf="@+id/inputEmailLogin"
     tools:ignore="Autofill,LabelFor" />
 
   <Button
@@ -93,7 +96,8 @@
     android:fontFamily="@font/adlam_display"
     android:text="@string/loginLabel"
     android:textAlignment="center"
-    android:textColor="@color/white"
+    android:backgroundTint="@color/white"
+    android:textColor="@color/black"
     android:textSize="16sp"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
@@ -110,6 +114,7 @@
     android:textAlignment="center"
     android:textColor="@color/mainColor"
     android:textSize="16sp"
+    android:onClick="goToResetPasswordActivity"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.504"
     app:layout_constraintStart_toStartOf="parent"
@@ -120,13 +125,17 @@
     android:layout_width="325dp"
     android:layout_height="53dp"
     android:layout_marginTop="48dp"
-    android:drawableStart="@mipmap/ic_launcher"
+    android:backgroundTint="@color/white"
     android:fontFamily="@font/adlam_display"
     android:text="@string/loginWithGoogle"
     android:textAlignment="textEnd"
+    android:textColor="@color/black"
     android:textSize="20sp"
+    app:icon="@drawable/google_icon"
+    app:iconSize="30dp"
+    app:iconTint="@null"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintHorizontal_bias="0.488"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/textViewResetPassword" />
 
@@ -150,7 +159,9 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="20dp"
     android:fontFamily="@font/adlam_display"
+    android:onClick="goToRegisterActivity"
     android:text="@string/registerLabel"
+    android:textAllCaps="false"
     android:textColor="@color/mainColor"
     android:textSize="15sp"
     app:layout_constraintEnd_toEndOf="parent"
