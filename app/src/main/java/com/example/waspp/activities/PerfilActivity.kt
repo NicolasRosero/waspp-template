@@ -1,10 +1,11 @@
-package com.example.waspp
+package com.example.waspp.activities
 
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import com.example.waspp.R
 
 class PerfilActivity : AppCompatActivity() {
   // Propiedades del formulario
@@ -29,6 +30,7 @@ class PerfilActivity : AppCompatActivity() {
     inputTextEmail = findViewById(R.id.inputUserEmailPerfil);
     inputTextPhoneNumber = findViewById(R.id.inputUserPhonePerfil);
 
+    // Establecer los valores en los inputs
     inputTextName.setText(sharedPreferences.getString("userName", ""));
     inputTextLastName.setText(sharedPreferences.getString("userLastName", ""));
     inputTextEmail.setText(sharedPreferences.getString("userEmail", ""));

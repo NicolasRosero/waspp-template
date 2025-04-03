@@ -7,7 +7,7 @@
   android:layout_height="match_parent"
   android:background="@color/black"
   android:onClick="gotToLogin"
-  tools:context=".WelcomeActivity">
+  tools:context=".activities.WelcomeActivity">
 
   <ImageView
     android:id="@+id/iconImageWelcomeActivity"

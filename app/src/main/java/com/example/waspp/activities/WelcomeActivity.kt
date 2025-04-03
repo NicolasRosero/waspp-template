@@ -1,10 +1,11 @@
-package com.example.waspp
+package com.example.waspp.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.example.waspp.R
 
 class WelcomeActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {

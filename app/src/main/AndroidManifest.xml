@@ -13,7 +13,7 @@
         android:theme="@style/Theme.WASPP"
         tools:targetApi="31">
         <activity
-            android:name=".SplashActivity"
+            android:name=".activities.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,12 +21,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".WelcomeActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".ResetPasswordActivity" />
-        <activity android:name=".PerfilActivity" />
+        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.WelcomeActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.ResetPasswordActivity" />
+        <activity android:name=".activities.PerfilActivity" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
