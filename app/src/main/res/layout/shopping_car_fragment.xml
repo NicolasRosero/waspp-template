@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/black">
+
+  <TextView
+    android:id="@+id/titleFragmentShoppingCar"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:fontFamily="@font/adlam_display"
+    android:text="@string/titleShoppingCar"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="22sp"
+    android:padding="5dp"
+    android:textStyle="bold" />
+
+  <LinearLayout
+    android:id="@+id/shoppingCarFragmentFile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/cardResumeCarContainer"
+      android:layout_width="match_parent"
+      android:layout_height="70dp"
+      android:layout_marginLeft="2dp"
+      android:layout_marginTop="3dp"
+      android:layout_marginRight="2dp"
+      android:layout_marginBottom="3dp"
+      android:background="@color/gray_ligth"
+      android:padding="7dp">
+
+
+      <TextView
+        android:id="@+id/totalPriceInCarLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/totalPriceInCarLabel"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/totalPriceInCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/totalPriceInCar"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/totalPriceInCarLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/totalProductsInCarLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/totalProductsInCarLabel"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/totalPriceInCar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/totalProductsInCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/totalProductsInCar"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/totalProductsInCarLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/cardContainerProduct"
+      android:layout_width="match_parent"
+      android:layout_height="145dp"
+      android:layout_marginLeft="2dp"
+      android:layout_marginTop="3dp"
+      android:layout_marginRight="2dp"
+      android:layout_marginBottom="3dp"
+      android:background="@color/gray_ligth"
+      android:padding="7dp">
+
+      <TextView
+        android:id="@+id/nameProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/nameProductSample"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <ImageView
+        android:id="@+id/imageProduct"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/imgIconDesc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameProduct"
+        app:srcCompat="@drawable/main_icon" />
+
+      <TextView
+        android:id="@+id/priceProductLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/priceLabel"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/nameProduct"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/priceProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="@string/valuePriceSample"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/priceProductLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/quantityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/totalQuantityInCarLabel"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageProduct"
+        app:layout_constraintTop_toBottomOf="@+id/priceProductLabel" />
+
+      <TextView
+        android:id="@+id/quantityProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/totalQuantityInCar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/quantityLabel"
+        app:layout_constraintTop_toBottomOf="@+id/priceProduct" />
+
+      <TextView
+        android:id="@+id/subtotalInCarLabel"
+        android:layout_width="72dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/subtotalInCarlabel"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageProduct"
+        app:layout_constraintTop_toBottomOf="@+id/quantityLabel" />
+
+      <TextView
+        android:id="@+id/subtotalInCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/subtotalInCar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subtotalInCarLabel"
+        app:layout_constraintTop_toBottomOf="@+id/quantityProduct" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/cardContainerProduct"
+      android:layout_width="match_parent"
+      android:layout_height="145dp"
+      android:layout_marginLeft="2dp"
+      android:layout_marginTop="3dp"
+      android:layout_marginRight="2dp"
+      android:layout_marginBottom="3dp"
+      android:background="@color/gray_ligth"
+      android:padding="7dp">
+
+      <TextView
+        android:id="@+id/nameProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/nameProductSample"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <ImageView
+        android:id="@+id/imageProduct"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/imgIconDesc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameProduct"
+        app:srcCompat="@drawable/main_icon" />
+
+      <TextView
+        android:id="@+id/priceProductLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/priceLabel"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/nameProduct"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/priceProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="@string/valuePriceSample"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/priceProductLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/quantityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/totalQuantityInCarLabel"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageProduct"
+        app:layout_constraintTop_toBottomOf="@+id/priceProductLabel" />
+
+      <TextView
+        android:id="@+id/quantityProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/totalQuantityInCar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/quantityLabel"
+        app:layout_constraintTop_toBottomOf="@+id/priceProduct" />
+
+      <TextView
+        android:id="@+id/subtotalInCarLabel"
+        android:layout_width="72dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/subtotalInCarlabel"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageProduct"
+        app:layout_constraintTop_toBottomOf="@+id/quantityLabel" />
+
+      <TextView
+        android:id="@+id/subtotalInCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/subtotalInCar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subtotalInCarLabel"
+        app:layout_constraintTop_toBottomOf="@+id/quantityProduct" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+      android:id="@+id/btnBuyNow"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:backgroundTint="@color/white"
+      android:fontFamily="@font/adlam_display"
+      android:text="@string/buyNowInCar"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="10dp"/>
+
+  </LinearLayout>
+</RelativeLayout>

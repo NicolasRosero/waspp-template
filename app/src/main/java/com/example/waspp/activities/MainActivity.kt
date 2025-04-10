@@ -2,22 +2,70 @@ package com.example.waspp.activities
 
 import android.os.Bundle
 import android.util.Log
-import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.appcompat.widget.Toolbar
+import androidx.drawerlayout.widget.DrawerLayout
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import com.example.waspp.R
+import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var navController: NavController;
+    private lateinit var appBarConfiguration: AppBarConfiguration;
+    private lateinit var drawerLayout: DrawerLayout;
+    private lateinit var toolbar: Toolbar;
+    private lateinit var drawerToggle: ActionBarDrawerToggle
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.mainActivity)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+
+        // Inicializar toolbar
+        toolbar = findViewById(R.id.mainToolBar);
+        setSupportActionBar(toolbar);
+
+        // Configurar controlador de fragments
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.navHostFragment) as NavHostFragment;
+        navController = navHostFragment.navController;
+
+        // Inicializar drawer layout
+        drawerLayout = findViewById(R.id.mainActivity);
+        val navView = findViewById<NavigationView>(R.id.mainNavMenu);
+
+        // Inicializar toogle
+        drawerToggle = ActionBarDrawerToggle(
+            this,
+            drawerLayout,
+            toolbar,
+            R.string.open_drawer,
+            R.string.close_drawer
+        );
+
+        drawerLayout.addDrawerListener(drawerToggle);
+        drawerToggle.syncState();
+
+        appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.perfilFragmentOption,
+                R.id.perfilFragmentOption,
+                R.id.productsFragmentOption,
+                R.id.categoriesFragmentOption,
+                R.id.shoppingCarFragmentOption
+            ),
+            drawerLayout
+        );
+
+        setupActionBarWithNavController(navController, appBarConfiguration);
+        navView.setupWithNavController(navController);
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp() || super.onSupportNavigateUp();
     }
 
     override fun onStart() {

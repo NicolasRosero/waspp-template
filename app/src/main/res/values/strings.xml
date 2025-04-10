@@ -1,5 +1,8 @@
 <resources>
+    <!-- Cadenas por defecto -->
     <string name="app_name">W.A.S.P.P</string>
+    <string name="saveLabel">Guardar</string>
+
     <string name="author">Nicolas Rosero Correal</string>
     <string name="startLabel">Comienza</string>
     <string name="registerLabel">Registrate</string>
@@ -35,4 +38,54 @@
 
     <!-- Cadenas de texto para el nav header -->
     <string name="welcomeLabel">Bienvenido</string>
+
+    <!-- Textos para los fragments -->
+    <string name="homeLabelFragment">Inicio</string>
+    <string name="productsLabelFragment">Productos</string>
+    <string name="open_drawer">Menú abierto</string>
+    <string name="close_drawer">Menú cerrado</string>
+
+    <!-- Cadenas de texto para el template de productos -->
+    <string name="titleProducts">Productos</string>
+    <string name="nameProductSample">Nombre producto</string>
+    <string name="descProductSample">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod dui sit amet accumsan faucibus. Mauris accumsan, erat nec pretium mattis, enim tortor semper felis, in interdum enim nisl sed metus</string>
+    <string name="priceLabel">Precio: </string>
+    <string name="valuePriceSample">$1000.00</string>
+    <string name="quantityDispLabel">Unidades: </string>
+    <string name="quantitySample">10 disp.</string>
+
+    <!-- Cadenas para las categorías -->
+    <string name="titleCategories">Categorías</string>
+    <string name="addToShoppingCarPlus">+</string>
+    <string name="foodCategoryDescImg">Alimentación</string>
+    <string name="technologyCategoryDescImg">Tecnología</string>
+    <string name="clothesCategoryDescImg">Ropa</string>
+    <string name="toysCategoryDescImg">Jugetería</string>
+    <string name="electricalCategoryDescImg">Electrodomésticos</string>
+    <string name="homeCategoryDescImg">Hogar</string>
+    <string name="sportsCategoryDescImg">Deportes</string>
+    <string name="accessoriesCategoryDescImg">Accesorios</string>
+
+    <!-- Cadenas para el carrito de compras -->
+    <string name="titleShoppingCar">Carrito</string>
+    <string name="totalPriceInCarLabel">Total: </string>
+    <string name="totalPriceInCar">$2000.00</string>
+    <string name="totalProductsInCarLabel">Productos: </string>
+    <string name="totalProductsInCar">2</string>
+    <string name="totalQuantityInCarLabel">Cantidad: </string>
+    <string name="totalQuantityInCar">1</string>
+    <string name="subtotalInCarlabel">Subtotal: </string>
+    <string name="subtotalInCar">$1000.00</string>
+    <string name="buyNowInCar">Comprar</string>
+
+    <!-- Cadenas para el fragment de inicio -->
+    <string name="welcomeTitleHome">Bienvenido a W.A.S.P.P.</string>
+    <string name="welcomeMsgHome">¡Aquí encontrarás todo lo que estás buscando!</string>
+
+    <!-- Cadenas para el listado del menú -->
+    <string name="homeLabelOptionMenu">Inicio</string>
+    <string name="perfilLabelOptionMenu">Perfil</string>
+    <string name="productsLabelOptionMenu">Productos</string>
+    <string name="categoriesLabelOptionMenu">Categorías</string>
+    <string name="shoppingCarLabelOptionMenu">Carrito</string>
 </resources>

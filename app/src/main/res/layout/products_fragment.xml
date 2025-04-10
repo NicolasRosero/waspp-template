@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/black">
+
+  <TextView
+    android:id="@+id/titleFragmentShoppingCar"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:fontFamily="@font/adlam_display"
+    android:text="@string/titleProducts"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="22sp"
+    android:padding="5dp"
+    android:textStyle="bold" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/productsFragmentFile">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="240dp"
+      android:padding="7dp"
+      android:layout_marginTop="3dp"
+      android:layout_marginBottom="3dp"
+      android:layout_marginLeft="2dp"
+      android:layout_marginRight="2dp"
+      android:background="@color/gray_ligth"
+      android:id="@+id/cardContainerProduct">
+
+      <ImageView
+        android:id="@+id/imageProduct"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:contentDescription="@string/imgIconDesc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_icon" />
+
+      <TextView
+        android:id="@+id/nameProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/nameProductSample"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageProduct" />
+
+      <TextView
+        android:id="@+id/descProduct"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/descProductSample"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameProduct"
+        app:layout_constraintVertical_bias="0.2" />
+
+      <TextView
+        android:id="@+id/priceProductLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/priceLabel"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageProduct"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/priceProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/valuePriceSample"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/priceProductLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/quantityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/quantityDispLabel"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageProduct"
+        app:layout_constraintTop_toBottomOf="@+id/priceProductLabel" />
+
+      <TextView
+        android:id="@+id/quantityProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/quantitySample"
+        app:layout_constraintStart_toEndOf="@+id/quantityLabel"
+        app:layout_constraintTop_toBottomOf="@+id/priceProduct" />
+
+      <Button
+        android:id="@+id/addToShoppingCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/addToShoppingCarPlus"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/descProduct" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="240dp"
+      android:padding="7dp"
+      android:layout_marginTop="3dp"
+      android:layout_marginBottom="3dp"
+      android:layout_marginLeft="2dp"
+      android:layout_marginRight="2dp"
+      android:background="@color/gray_ligth"
+      android:id="@+id/cardContainerProduct">
+
+      <ImageView
+        android:id="@+id/imageProduct"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:contentDescription="@string/imgIconDesc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_icon" />
+
+      <TextView
+        android:id="@+id/nameProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/nameProductSample"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageProduct" />
+
+      <TextView
+        android:id="@+id/descProduct"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/descProductSample"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameProduct"
+        app:layout_constraintVertical_bias="0.2" />
+
+      <TextView
+        android:id="@+id/priceProductLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/priceLabel"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageProduct"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/priceProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/valuePriceSample"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/priceProductLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/quantityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/quantityDispLabel"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageProduct"
+        app:layout_constraintTop_toBottomOf="@+id/priceProductLabel" />
+
+      <TextView
+        android:id="@+id/quantityProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/quantitySample"
+        app:layout_constraintStart_toEndOf="@+id/quantityLabel"
+        app:layout_constraintTop_toBottomOf="@+id/priceProduct" />
+
+      <Button
+        android:id="@+id/addToShoppingCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/addToShoppingCarPlus"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/descProduct" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </LinearLayout>
+</RelativeLayout>

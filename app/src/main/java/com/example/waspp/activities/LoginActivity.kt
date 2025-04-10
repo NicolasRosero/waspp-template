@@ -85,13 +85,13 @@ class LoginActivity : AppCompatActivity() {
       return;
     }
 
-    btnLogin.postDelayed({
-      Toast
-        .makeText(this, "Ingresando...", Toast.LENGTH_SHORT)
-        .show();
+    Toast
+      .makeText(this, "Ingresando...", Toast.LENGTH_SHORT)
+      .show();
 
+    btnLogin.postDelayed({
       startActivity(
-        Intent(this, PerfilActivity::class.java)
+        Intent(this, MainActivity::class.java)
       )
       finish();
     }, 2000);

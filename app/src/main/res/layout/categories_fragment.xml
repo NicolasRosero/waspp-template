@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center"
+  android:orientation="vertical"
+  android:background="@color/black"
+  android:id="@+id/categoriesFragmentFile">
+
+  <TextView
+    android:id="@+id/titleCategories"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:fontFamily="@font/adlam_display"
+    android:padding="5dp"
+    android:text="@string/titleCategories"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="22sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+    android:id="@+id/cardContainerCategory1"
+    android:layout_width="180dp"
+    android:layout_height="200dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="20dp"
+    android:background="@color/gray_ligth"
+    android:padding="7dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/titleCategories" />
+
+  <View
+    android:id="@+id/cardContainerCategory2"
+    android:layout_width="180dp"
+    android:layout_height="200dp"
+    android:layout_marginTop="20dp"
+    android:background="@color/gray_ligth"
+    android:padding="7dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.483"
+    app:layout_constraintStart_toEndOf="@+id/cardContainerCategory1"
+    app:layout_constraintTop_toBottomOf="@+id/titleCategories" />
+
+  <View
+    android:id="@+id/cardContainerCategory3"
+    android:layout_width="180dp"
+    android:layout_height="200dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="20dp"
+    android:background="@color/gray_ligth"
+    android:padding="7dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/cardContainerCategory1" />
+
+  <View
+    android:id="@+id/cardContainerCategory4"
+    android:layout_width="180dp"
+    android:layout_height="200dp"
+    android:layout_marginTop="20dp"
+    android:background="@color/gray_ligth"
+    android:padding="7dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.483"
+    app:layout_constraintStart_toEndOf="@+id/cardContainerCategory3"
+    app:layout_constraintTop_toBottomOf="@+id/cardContainerCategory2" />
+
+  <View
+    android:id="@+id/cardContainerCategory5"
+    android:layout_width="180dp"
+    android:layout_height="200dp"
+    android:layout_marginTop="20dp"
+    android:background="@color/gray_ligth"
+    android:padding="7dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.497"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/cardContainerCategory3" />
+
+  <ImageView
+    android:id="@+id/accessoriesCategoryImg"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:layout_marginTop="28dp"
+    android:contentDescription="@string/accessoriesCategoryDescImg"
+    app:layout_constraintEnd_toEndOf="@+id/cardContainerCategory5"
+    app:layout_constraintStart_toStartOf="@+id/cardContainerCategory5"
+    app:layout_constraintTop_toTopOf="@+id/cardContainerCategory5"
+    app:srcCompat="@drawable/accessories_category" />
+
+  <TextView
+    android:id="@+id/electricalCategoryLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/adlam_display"
+    android:text="@string/accessoriesCategoryDescImg"
+    android:textSize="17sp"
+    app:layout_constraintBottom_toBottomOf="@+id/cardContainerCategory5"
+    app:layout_constraintEnd_toEndOf="@+id/cardContainerCategory5"
+    app:layout_constraintHorizontal_bias="0.493"
+    app:layout_constraintStart_toStartOf="@+id/cardContainerCategory5"
+    app:layout_constraintTop_toBottomOf="@+id/accessoriesCategoryImg"
+    app:layout_constraintVertical_bias="0.686" />
+
+  <ImageView
+    android:id="@+id/homeCategoryImg"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:layout_marginTop="35dp"
+    android:contentDescription="@string/homeCategoryDescImg"
+    app:layout_constraintEnd_toEndOf="@+id/cardContainerCategory1"
+    app:layout_constraintStart_toStartOf="@+id/cardContainerCategory1"
+    app:layout_constraintTop_toTopOf="@+id/cardContainerCategory1"
+    app:srcCompat="@drawable/home_category" />
+
+  <TextView
+    android:id="@+id/homeCategoryLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/adlam_display"
+    android:text="@string/homeCategoryDescImg"
+    android:textSize="17sp"
+    app:layout_constraintBottom_toBottomOf="@+id/cardContainerCategory1"
+    app:layout_constraintEnd_toEndOf="@+id/cardContainerCategory1"
+    app:layout_constraintStart_toStartOf="@+id/cardContainerCategory1"
+    app:layout_constraintTop_toBottomOf="@+id/homeCategoryImg" />
+
+  <ImageView
+    android:id="@+id/clothesCategoryImg"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:layout_marginTop="35dp"
+    android:contentDescription="@string/clothesCategoryDescImg"
+    app:layout_constraintEnd_toEndOf="@+id/cardContainerCategory2"
+    app:layout_constraintStart_toStartOf="@+id/cardContainerCategory2"
+    app:layout_constraintTop_toTopOf="@+id/cardContainerCategory2"
+    app:srcCompat="@drawable/clothes_category" />
+
+  <TextView
+    android:id="@+id/clothesCategoryLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/adlam_display"
+    android:text="@string/clothesCategoryDescImg"
+    android:textSize="17sp"
+    app:layout_constraintBottom_toBottomOf="@+id/cardContainerCategory2"
+    app:layout_constraintEnd_toEndOf="@+id/cardContainerCategory2"
+    app:layout_constraintStart_toStartOf="@+id/cardContainerCategory2"
+    app:layout_constraintTop_toBottomOf="@+id/clothesCategoryImg" />
+
+  <ImageView
+    android:id="@+id/technologyCategoryImg"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:layout_marginTop="35dp"
+    android:contentDescription="@string/technologyCategoryDescImg"
+    app:layout_constraintEnd_toEndOf="@+id/cardContainerCategory3"
+    app:layout_constraintStart_toStartOf="@+id/cardContainerCategory3"
+    app:layout_constraintTop_toTopOf="@+id/cardContainerCategory3"
+    app:srcCompat="@drawable/tecnology_cagegory" />
+
+  <TextView
+    android:id="@+id/technologyCategoryLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/adlam_display"
+    android:text="@string/technologyCategoryDescImg"
+    android:textSize="17sp"
+    app:layout_constraintBottom_toBottomOf="@+id/cardContainerCategory3"
+    app:layout_constraintEnd_toEndOf="@+id/cardContainerCategory3"
+    app:layout_constraintStart_toStartOf="@+id/cardContainerCategory3"
+    app:layout_constraintTop_toBottomOf="@+id/technologyCategoryImg" />
+
+  <ImageView
+    android:id="@+id/sportsCategoryImg"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:layout_marginTop="35dp"
+    android:contentDescription="@string/sportsCategoryDescImg"
+    app:layout_constraintEnd_toEndOf="@+id/cardContainerCategory4"
+    app:layout_constraintStart_toStartOf="@+id/cardContainerCategory4"
+    app:layout_constraintTop_toTopOf="@+id/cardContainerCategory4"
+    app:srcCompat="@drawable/sports_category" />
+
+  <TextView
+    android:id="@+id/sportsCategoryLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/adlam_display"
+    android:text="@string/sportsCategoryDescImg"
+    android:textSize="17sp"
+    app:layout_constraintBottom_toBottomOf="@+id/cardContainerCategory4"
+    app:layout_constraintEnd_toEndOf="@+id/cardContainerCategory4"
+    app:layout_constraintStart_toStartOf="@+id/cardContainerCategory4"
+    app:layout_constraintTop_toBottomOf="@+id/sportsCategoryImg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
