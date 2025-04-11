@@ -144,10 +144,10 @@
       android:layout_marginLeft="2dp"
       android:layout_marginRight="2dp"
       android:background="@color/gray_ligth"
-      android:id="@+id/cardContainerProduct">
+      android:id="@+id/cardContainerProduct2">
 
       <ImageView
-        android:id="@+id/imageProduct"
+        android:id="@+id/imageProduct2"
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_marginStart="15dp"
@@ -157,7 +157,7 @@
         app:srcCompat="@drawable/main_icon" />
 
       <TextView
-        android:id="@+id/nameProduct"
+        android:id="@+id/nameProduct2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -167,21 +167,21 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageProduct" />
+        app:layout_constraintTop_toBottomOf="@+id/imageProduct2" />
 
       <TextView
-        android:id="@+id/descProduct"
+        android:id="@+id/descProduct2"
         android:layout_width="200dp"
         android:layout_height="70dp"
         android:layout_marginStart="15dp"
         android:text="@string/descProductSample"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameProduct"
+        app:layout_constraintTop_toBottomOf="@+id/nameProduct2"
         app:layout_constraintVertical_bias="0.2" />
 
       <TextView
-        android:id="@+id/priceProductLabel"
+        android:id="@+id/priceProductLabel2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -190,11 +190,11 @@
         android:text="@string/priceLabel"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageProduct"
+        app:layout_constraintStart_toEndOf="@+id/imageProduct2"
         app:layout_constraintTop_toTopOf="parent" />
 
       <TextView
-        android:id="@+id/priceProduct"
+        android:id="@+id/priceProduct2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -202,11 +202,11 @@
         android:text="@string/valuePriceSample"
         android:textAlignment="center"
         android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/priceProductLabel"
+        app:layout_constraintStart_toEndOf="@+id/priceProductLabel2"
         app:layout_constraintTop_toTopOf="parent" />
 
       <TextView
-        android:id="@+id/quantityLabel"
+        android:id="@+id/quantityLabel2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -215,21 +215,21 @@
         android:text="@string/quantityDispLabel"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageProduct"
-        app:layout_constraintTop_toBottomOf="@+id/priceProductLabel" />
+        app:layout_constraintStart_toEndOf="@+id/imageProduct2"
+        app:layout_constraintTop_toBottomOf="@+id/priceProductLabel2" />
 
       <TextView
-        android:id="@+id/quantityProduct"
+        android:id="@+id/quantityProduct2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:text="@string/quantitySample"
-        app:layout_constraintStart_toEndOf="@+id/quantityLabel"
-        app:layout_constraintTop_toBottomOf="@+id/priceProduct" />
+        app:layout_constraintStart_toEndOf="@+id/quantityLabel2"
+        app:layout_constraintTop_toBottomOf="@+id/priceProduct2" />
 
       <Button
-        android:id="@+id/addToShoppingCar"
+        android:id="@+id/addToShoppingCar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
@@ -240,7 +240,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/descProduct" />
+        app:layout_constraintStart_toEndOf="@+id/descProduct2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
   </LinearLayout>

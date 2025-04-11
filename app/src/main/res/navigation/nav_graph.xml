@@ -36,4 +36,29 @@
     android:name="com.example.waspp.fragments.ShoppingCarFragment"
     android:label="@string/shoppingCarLabelOptionMenu" />
 
+  <fragment
+    android:id="@+id/homeCategoryFragmentOption"
+    android:name="com.example.waspp.fragments.HomeCategoryFragment"
+    android:label="@string/homeCategoryDescImg" />
+
+  <fragment
+    android:id="@+id/clothesCategoryFragmentOption"
+    android:name="com.example.waspp.fragments.ClothesCategoryFragment"
+    android:label="@string/clothesCategoryDescImg" />
+
+  <fragment
+    android:id="@+id/technologyCategoryFragmentOption"
+    android:name="com.example.waspp.fragments.TechnologyCategoryFragment"
+    android:label="@string/technologyCategoryDescImg" />
+
+  <fragment
+    android:id="@+id/sportsCategoryFragmentOption"
+    android:name="com.example.waspp.fragments.SportsCategoryFragment"
+    android:label="@string/sportsCategoryDescImg" />
+
+  <fragment
+    android:id="@+id/accessoriesCategoryFragmentOption"
+    android:name="com.example.waspp.fragments.AccessoriesCategoryFragment"
+    android:label="@string/accessoriesCategoryDescImg" />
+
 </navigation>

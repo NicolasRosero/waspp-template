@@ -54,18 +54,6 @@
     <string name="quantityDispLabel">Unidades: </string>
     <string name="quantitySample">10 disp.</string>
 
-    <!-- Cadenas para las categorías -->
-    <string name="titleCategories">Categorías</string>
-    <string name="addToShoppingCarPlus">+</string>
-    <string name="foodCategoryDescImg">Alimentación</string>
-    <string name="technologyCategoryDescImg">Tecnología</string>
-    <string name="clothesCategoryDescImg">Ropa</string>
-    <string name="toysCategoryDescImg">Jugetería</string>
-    <string name="electricalCategoryDescImg">Electrodomésticos</string>
-    <string name="homeCategoryDescImg">Hogar</string>
-    <string name="sportsCategoryDescImg">Deportes</string>
-    <string name="accessoriesCategoryDescImg">Accesorios</string>
-
     <!-- Cadenas para el carrito de compras -->
     <string name="titleShoppingCar">Carrito</string>
     <string name="totalPriceInCarLabel">Total: </string>
@@ -88,4 +76,17 @@
     <string name="productsLabelOptionMenu">Productos</string>
     <string name="categoriesLabelOptionMenu">Categorías</string>
     <string name="shoppingCarLabelOptionMenu">Carrito</string>
+
+    <!-- Cadenas para las categorías -->
+    <string name="titleCategories">Categorías</string>
+    <string name="addToShoppingCarPlus">+</string>
+    <string name="foodCategoryDescImg">Alimentación</string>
+    <string name="technologyCategoryDescImg">Tecnología</string>
+    <string name="clothesCategoryDescImg">Ropa</string>
+    <string name="toysCategoryDescImg">Jugetería</string>
+    <string name="electricalCategoryDescImg">Electrodomésticos</string>
+    <string name="homeCategoryDescImg">Hogar</string>
+    <string name="sportsCategoryDescImg">Deportes</string>
+    <string name="accessoriesCategoryDescImg">Accesorios</string>
+    <string name="productsQuantityInCategoryLabel">Productos disponibles: 10</string>
 </resources>
