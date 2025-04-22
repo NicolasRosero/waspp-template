@@ -20,6 +20,8 @@ class EditPerfilFragment : Fragment() {
   private lateinit var inputTextLastName: EditText;
   private lateinit var inputTextEmail: EditText;
   private lateinit var inputTextPhoneNumber: EditText;
+  private lateinit var inputTextAcademicProgram: EditText;
+  private lateinit var inputTextSemester: EditText;
   private lateinit var btnSaveInfo: Button;
 
   // Propiedades para manejar información de forma local
@@ -39,6 +41,8 @@ class EditPerfilFragment : Fragment() {
     inputTextLastName = view.findViewById(R.id.inputUserLastNamePerfil);
     inputTextEmail = view.findViewById(R.id.inputUserEmailPerfil);
     inputTextPhoneNumber = view.findViewById(R.id.inputUserPhonePerfil);
+    inputTextAcademicProgram = view.findViewById(R.id.inputUserAcademicProgramPerfil);
+    inputTextSemester = view.findViewById(R.id.inputUserSemesterPerfil);
     btnSaveInfo = view.findViewById(R.id.btnEditInfoUser)
 
     // Establecer los valores en los inputs
@@ -46,6 +50,8 @@ class EditPerfilFragment : Fragment() {
     inputTextLastName.setText(sharedPreferences.getString("userLastName", ""));
     inputTextEmail.setText(sharedPreferences.getString("userEmail", ""));
     inputTextPhoneNumber.setText(sharedPreferences.getString("userPhone", ""));
+    inputTextAcademicProgram.setText(sharedPreferences.getString("userAcademicProgram", ""));
+    inputTextSemester.setText(sharedPreferences.getString("userSemester", ""));
 
     btnSaveInfo.setOnClickListener {
       if(validateForm()) {
@@ -61,6 +67,8 @@ class EditPerfilFragment : Fragment() {
     val userLastName = inputTextLastName.text.toString().trim();
     val userEmail = inputTextEmail.text.toString().trim();
     val userPhone = inputTextPhoneNumber.text.toString().trim();
+    val userAcademicProgram = inputTextAcademicProgram.text.toString().trim();
+    val userSemester = inputTextSemester.text.toString().trim();
 
     if(userName.isEmpty()) {
       Toast
@@ -94,6 +102,22 @@ class EditPerfilFragment : Fragment() {
       return false;
     }
 
+    if(userAcademicProgram.isEmpty()) {
+      Toast
+        .makeText(this.requireContext(), "Debes ingresar tu programa académico para continuar", Toast.LENGTH_SHORT)
+        .show();
+
+      return false;
+    }
+
+    if(userSemester.isEmpty()) {
+      Toast
+        .makeText(this.requireContext(), "Debes ingresar tu ubicación semestral para continuar", Toast.LENGTH_SHORT)
+        .show();
+
+      return false;
+    }
+
     return true;
   }
 
@@ -105,6 +129,8 @@ class EditPerfilFragment : Fragment() {
     editor.putString("userLastName", inputTextLastName.text.toString().trim());
     editor.putString("userEmail", inputTextEmail.text.toString().trim());
     editor.putString("userPhone", inputTextPhoneNumber.text.toString().trim());
+    editor.putString("userAcademicProgram", inputTextAcademicProgram.text.toString().trim());
+    editor.putString("userSemester", inputTextSemester.text.toString().trim());
 
     // Guardar información
     editor.apply();

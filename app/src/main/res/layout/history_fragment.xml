@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/black"
+  android:id="@+id/historyFragmentFile">
+
+  <TextView
+    android:id="@+id/titleHistory"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:fontFamily="@font/adlam_display"
+    android:text="@string/titleHistory"
+    android:textAlignment="textStart"
+    android:textColor="@color/white"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/applianceTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="30dp"
+    android:fontFamily="@font/adlam_display"
+    android:text="@string/appliance"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/titleHistory" />
+
+  <TextView
+    android:id="@+id/dailyConsumeTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="15dp"
+    android:fontFamily="@font/adlam_display"
+    android:text="@string/dailyConsumeLabel"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/applianceTitle" />
+
+  <TextView
+    android:id="@+id/monthlyConsumeTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="15dp"
+    android:fontFamily="@font/adlam_display"
+    android:text="@string/monthlyConsume"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/dailyConsumeTitle" />
+
+  <TextView
+    android:id="@+id/totalCostTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="15dp"
+    android:fontFamily="@font/adlam_display"
+    android:text="@string/totalElectricalCost"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/monthlyConsumeTitle" />
+
+  <TextView
+    android:id="@+id/applianceValue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="30dp"
+    android:fontFamily="@font/adlam_display"
+    android:text="@string/app_name"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="15sp"
+    app:layout_constraintStart_toEndOf="@+id/applianceTitle"
+    app:layout_constraintTop_toBottomOf="@+id/titleHistory" />
+
+  <TextView
+    android:id="@+id/dailyConsumeValue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="15dp"
+    android:fontFamily="@font/adlam_display"
+    android:text="@string/app_name"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="15sp"
+    app:layout_constraintStart_toEndOf="@+id/dailyConsumeTitle"
+    app:layout_constraintTop_toBottomOf="@+id/applianceValue" />
+
+  <TextView
+    android:id="@+id/monthlyConsumeValue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="15dp"
+    android:fontFamily="@font/adlam_display"
+    android:text="@string/app_name"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="15sp"
+    app:layout_constraintStart_toEndOf="@+id/monthlyConsumeTitle"
+    app:layout_constraintTop_toBottomOf="@+id/dailyConsumeValue" />
+
+  <TextView
+    android:id="@+id/totalCostValue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="15dp"
+    android:fontFamily="@font/adlam_display"
+    android:text="@string/app_name"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="15sp"
+    app:layout_constraintStart_toEndOf="@+id/totalCostTitle"
+    app:layout_constraintTop_toBottomOf="@+id/monthlyConsumeValue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

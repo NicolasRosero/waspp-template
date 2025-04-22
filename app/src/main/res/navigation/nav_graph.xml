@@ -17,6 +17,16 @@
     android:label="@string/perfilLabelOptionMenu" />
 
   <fragment
+    android:id="@+id/historyFragmentOption"
+    android:name="com.example.waspp.fragments.HistoryFragment"
+    android:label="@string/historyLabelOptionMenu" />
+
+  <fragment
+    android:id="@+id/analysisFragmentOption"
+    android:name="com.example.waspp.fragments.AnalysisFragment"
+    android:label="@string/analysisLabelOptionMenu" />
+
+  <fragment
     android:id="@+id/perfilEditFragmentOption"
     android:name="com.example.waspp.fragments.EditPerfilFragment"
     android:label="@string/categoriesLabelOptionMenu" />

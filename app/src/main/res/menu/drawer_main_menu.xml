@@ -10,15 +10,23 @@
       android:title="@string/perfilLabelOptionMenu" />
 
     <item
-      android:id="@+id/productsFragmentOption"
-      android:title="@string/productsLabelOptionMenu" />
+      android:id="@+id/analysisFragmentOption"
+      android:title="@string/analysisLabelOptionMenu" />
 
     <item
-      android:id="@+id/categoriesFragmentOption"
-      android:title="@string/categoriesLabelOptionMenu" />
+      android:id="@+id/historyFragmentOption"
+      android:title="@string/historyLabelOptionMenu" />
 
-    <item
-      android:id="@+id/shoppingCarFragmentOption"
-      android:title="@string/shoppingCarLabelOptionMenu" />
+<!--    <item-->
+<!--      android:id="@+id/productsFragmentOption"-->
+<!--      android:title="@string/productsLabelOptionMenu" />-->
+
+<!--    <item-->
+<!--      android:id="@+id/categoriesFragmentOption"-->
+<!--      android:title="@string/categoriesLabelOptionMenu" />-->
+
+<!--    <item-->
+<!--      android:id="@+id/shoppingCarFragmentOption"-->
+<!--      android:title="@string/shoppingCarLabelOptionMenu" />-->
   </group>
 </menu>

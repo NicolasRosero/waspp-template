@@ -1,6 +1,6 @@
 <resources>
     <!-- Cadenas por defecto -->
-    <string name="app_name">W.A.S.P.P</string>
+    <string name="app_name">Parcial 2</string>
     <string name="saveLabel">Guardar</string>
 
     <string name="author">Nicolas Rosero Correal</string>
@@ -8,7 +8,7 @@
     <string name="registerLabel">Registrate</string>
     <string name="loginLabel">Ingresar</string>
     <string name="resetPasswordLabel">Recupera tu contraseña</string>
-    <string name="welcomeText">Inicia una nueva aventura con W.A.S.P.P y descubre una nueva forma de ver el mundo.</string>
+    <string name="welcomeText">Inicia una nueva aventura con Parcial 2 y descubre una nueva forma de ver el mundo.</string>
     <string name="loginText">La aventura esta por iniciar, por favor inicia sesión</string>
     <string name="imgIconDesc">Icon imagen</string>
     <string name="imgLoginDesc">Imagen de credenciales</string>
@@ -23,8 +23,10 @@
     <!-- Cadenas para el formulario de registro -->
     <string name="inputNameString">Nombres</string>
     <string name="inputLastNameString">Apellidos</string>
-    <string name="inputEmailString">Correo electrónico</string>
+    <string name="inputEmailString">Correo institucional</string>
     <string name="inputPhoneString">Teléfono</string>
+    <string name="inputAcademicProgram">Programa académico</string>
+    <string name="inputSemester">Semestre</string>
     <string name="inputPasswordString">Contraseña</string>
     <string name="inputConfirmPasswordString">Confirmar contraseña</string>
     <string name="checkTermsAndConditionsString">Acepta términos y condiciones</string>
@@ -67,15 +69,17 @@
     <string name="buyNowInCar">Comprar</string>
 
     <!-- Cadenas para el fragment de inicio -->
-    <string name="welcomeTitleHome">Bienvenido a W.A.S.P.P.</string>
+    <string name="welcomeTitleHome">Bienvenido a Parcial 2</string>
     <string name="welcomeMsgHome">¡Aquí encontrarás todo lo que estás buscando!</string>
 
     <!-- Cadenas para el listado del menú -->
     <string name="homeLabelOptionMenu">Inicio</string>
-    <string name="perfilLabelOptionMenu">Perfil</string>
+    <string name="perfilLabelOptionMenu">Mis datos</string>
     <string name="productsLabelOptionMenu">Productos</string>
     <string name="categoriesLabelOptionMenu">Categorías</string>
     <string name="shoppingCarLabelOptionMenu">Carrito</string>
+    <string name="analysisLabelOptionMenu">Análisis</string>
+    <string name="historyLabelOptionMenu">Histórico</string>
 
     <!-- Cadenas para las categorías -->
     <string name="titleCategories">Categorías</string>
@@ -89,4 +93,18 @@
     <string name="sportsCategoryDescImg">Deportes</string>
     <string name="accessoriesCategoryDescImg">Accesorios</string>
     <string name="productsQuantityInCategoryLabel">Productos disponibles: 10</string>
+
+    <!-- Strings para el formulario de analysis_fragment.xml -->
+    <string name="titleFormElectricalConsume">Consumo eléctrico</string>
+    <string name="appliance">Electrodoméstico</string>
+    <string name="hoursOfDailyUse">Horas de uso al día</string>
+    <string name="powerAppliance">Potencia (W)</string>
+    <string name="electricCost">Tarifa eléctrica</string>
+    <string name="calculeElectricalCostBtnLabel">Calcular</string>
+    
+    <!-- Strings para el histórico -->
+    <string name="titleHistory">Histórico</string>
+    <string name="dailyConsumeLabel">Consumo diarío: </string>
+    <string name="monthlyConsume">Consumo mensual: </string>
+    <string name="totalElectricalCost">Costo mensual: </string>
 </resources>

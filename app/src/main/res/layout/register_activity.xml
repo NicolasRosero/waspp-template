@@ -92,6 +92,30 @@
       android:layout_marginBottom="7dp" />
 
     <EditText
+      android:id="@+id/inputUserAcademicProgram"
+      style="@style/editTextRounded"
+      android:layout_width="match_parent"
+      android:layout_height="52dp"
+      android:ems="10"
+      android:fontFamily="@font/adlam_display"
+      android:inputType="text"
+      android:hint="@string/inputAcademicProgram"
+      android:layout_marginTop="7dp"
+      android:layout_marginBottom="7dp" />
+
+    <EditText
+      android:id="@+id/inputUserSemester"
+      style="@style/editTextRounded"
+      android:layout_width="match_parent"
+      android:layout_height="52dp"
+      android:ems="10"
+      android:fontFamily="@font/adlam_display"
+      android:inputType="number"
+      android:hint="@string/inputSemester"
+      android:layout_marginTop="7dp"
+      android:layout_marginBottom="7dp" />
+
+    <EditText
       android:id="@+id/inputUserPassword"
       style="@style/editTextRounded"
       android:layout_width="match_parent"

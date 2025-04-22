@@ -19,6 +19,8 @@ class RegisterActivity : AppCompatActivity() {
   private lateinit var inputTextLastName: EditText;
   private lateinit var inputTextEmail: EditText;
   private lateinit var inputTextPhoneNumber: EditText;
+  private lateinit var inputTextAcademicProgram: EditText;
+  private lateinit var inputTextSemester: EditText;
   private lateinit var inputTextPassword: EditText;
   private lateinit var inputTextConfirmPassword: EditText;
   private lateinit var checkBoxTermsAndConditions: CheckBox;
@@ -41,6 +43,8 @@ class RegisterActivity : AppCompatActivity() {
     inputTextLastName = findViewById(R.id.inputUserLastName);
     inputTextEmail = findViewById(R.id.inputUserEmail);
     inputTextPhoneNumber = findViewById(R.id.inputUserPhone);
+    inputTextAcademicProgram = findViewById(R.id.inputUserAcademicProgram);
+    inputTextSemester = findViewById(R.id.inputUserSemester);
     inputTextPassword = findViewById(R.id.inputUserPassword);
     inputTextConfirmPassword = findViewById(R.id.inputUserConfirmPassword);
     checkBoxTermsAndConditions = findViewById(R.id.checkUserTerms);
@@ -60,6 +64,8 @@ class RegisterActivity : AppCompatActivity() {
     val userLastName = inputTextLastName.text.toString().trim();
     val userEmail = inputTextEmail.text.toString().trim();
     val userPhone = inputTextPhoneNumber.text.toString().trim();
+    val userAcademicProgram = inputTextAcademicProgram.text.toString().trim();
+    val userSemester = inputTextSemester.text.toString().trim();
     val userPassword = inputTextPassword.text.toString().trim();
     val userConfirmPassword = inputTextConfirmPassword.text.toString().trim();
     val termsAndConditions = checkBoxTermsAndConditions.isChecked;
@@ -91,6 +97,22 @@ class RegisterActivity : AppCompatActivity() {
     if(userPhone.isEmpty()) {
       Toast
         .makeText(this, "Debes ingresar un número de celular para continuar", Toast.LENGTH_SHORT)
+        .show();
+
+      return false;
+    }
+
+    if(userAcademicProgram.isEmpty()) {
+      Toast
+        .makeText(this, "Debes ingresar tu programa académico para continuar", Toast.LENGTH_SHORT)
+        .show();
+
+      return false;
+    }
+
+    if(userSemester.isEmpty()) {
+      Toast
+        .makeText(this, "Debes ingresar tu ubicación semestral para continuar", Toast.LENGTH_SHORT)
         .show();
 
       return false;
@@ -139,8 +161,9 @@ class RegisterActivity : AppCompatActivity() {
     editor.putString("userLastName", inputTextLastName.text.toString().trim());
     editor.putString("userEmail", inputTextEmail.text.toString().trim());
     editor.putString("userPhone", inputTextPhoneNumber.text.toString().trim());
+    editor.putString("userAcademicProgram", inputTextAcademicProgram.text.toString().trim());
+    editor.putString("userSemester", inputTextSemester.text.toString().trim());
     editor.putString("userPassword", inputTextPassword.text.toString().trim());
-    editor.putString("userPhone", inputTextPhoneNumber.text.toString().trim());
     editor.putString("userHasAcceptedTerms", checkBoxTermsAndConditions.isChecked.toString().trim());
 
     // Guardar información

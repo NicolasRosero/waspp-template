@@ -18,6 +18,8 @@ class ViewPerfilFragment : Fragment() {
   private lateinit var inputTextLastName: EditText;
   private lateinit var inputTextEmail: EditText;
   private lateinit var inputTextPhoneNumber: EditText;
+  private lateinit var inputTextAcademicProgram: EditText;
+  private lateinit var inputTextSemester: EditText;
   private lateinit var btnGoToEdit: Button;
 
   // Propiedades para manejar información de forma local
@@ -36,6 +38,8 @@ class ViewPerfilFragment : Fragment() {
     inputTextLastName = view.findViewById(R.id.inputUserLastNamePerfilView);
     inputTextEmail = view.findViewById(R.id.inputUserEmailPerfilView);
     inputTextPhoneNumber = view.findViewById(R.id.inputUserPhonePerfilView);
+    inputTextAcademicProgram = view.findViewById(R.id.inputUserAcademicProgramPerfilView);
+    inputTextSemester = view.findViewById(R.id.inputUserSemesterPerfilView);
     btnGoToEdit = view.findViewById(R.id.btnEditInfoUserView);
 
     // Establecer los valores en los inputs
@@ -43,6 +47,8 @@ class ViewPerfilFragment : Fragment() {
     inputTextLastName.setText(sharedPreferences.getString("userLastName", ""));
     inputTextEmail.setText(sharedPreferences.getString("userEmail", ""));
     inputTextPhoneNumber.setText(sharedPreferences.getString("userPhone", ""));
+    inputTextAcademicProgram.setText(sharedPreferences.getString("userAcademicProgram", ""));
+    inputTextSemester.setText("Ubicación semestral: " + sharedPreferences.getString("userSemester", ""));
 
     btnGoToEdit.setOnClickListener {
       findNavController().navigate(R.id.perfilEditFragmentOption);
